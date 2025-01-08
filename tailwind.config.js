@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        incompleeta: ['incompleeta', 'sans-serif'],
+        'bebas-neue': ['Bebas Neue', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
