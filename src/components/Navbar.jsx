@@ -1,78 +1,30 @@
-import { useState } from "react";
 import logo from "../assets/images/sparkhaus.png";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleScroll = (event, targetId) => {
-    event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-    setIsMobileMenuOpen(false);
-  };
-
-  const LINKS = [
-    { text: "Home", targetId: "home" },
-    { text: "Services", targetId: "services" },
-    { text: "Blogs", targetId: "blog" },
-    { text: "Contact Us", targetId: "contactus" },
-  ];
-
   return (
-    <nav className="fixed top-4 z-50 flex w-full flex-col items-center justify-center font-bebas-neue rounded-3xl">
-      <div className="flex w-full items-center justify-between overflow-y-hidden p-4 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg">
-        
-          
-          <img src={logo} alt="logo" className="w-32 h-10" />
-         
+    <nav className="fixed top-0 z-50 w-full text-white">
+      <div className="mx-auto flex max-w-screen-xl items-center justify-between mt-8 px-4 py-1 backdrop-blur-lg border border-slate-700 rounded-3xl font-bebas-neue">
+        {/* Logo */}
+        <img src={logo} alt="SparkHaus Logo" className="w-32" />
 
-        {/* Mobile View */}
-        <div className="hidden space-x-6 lg:flex">
-          {LINKS.map((link, index) => (
-            <a
-              key={index}
-              href={`#${link.targetId}`}
-              className={`text-sm ${
-                index !== 0 ? "border-l-2 border-neutral-300/20 pl-2" : ""
-              } hover:opacity-50`}
-              onClick={(e) => handleScroll(e, link.targetId)}
-            >
-              {link.text}
-            </a>
-          ))}
+        {/* Navigation Links */}
+        <div className="hidden space-x-8 lg:flex text-lg uppercase hover:text-gray-400 ">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
         </div>
 
-        <div className="lg:hidden">
-          <button onClick={toggleMobileMenu}>
-            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+        {/* Call-to-Action Button */}
+        <a
+          href="#contact"
+          className="hidden rounded-full bg-white px-6 py-2 text-black font-medium uppercase tracking-wide shadow-lg transition hover:bg-gray-200 lg:inline-block"
+        >
+          Book a Call
+        </a>
+
+        {/* Mobile Menu Button */}
+        <button className="block text-xl lg:hidden">☰</button>
       </div>
-      {isMobileMenuOpen && (
-        <div className="w-full backdrop-blur-lg lg:hidden">
-          {LINKS.map((link, index) => (
-            <a
-              key={index}
-              href={`#${link.targetId}`}
-              className="block p-4 uppercase tracking-tighter"
-              onClick={(e) => handleScroll(e, link.targetId)}
-            >
-              {link.text}
-            </a>
-          ))}
-        </div>
-      )}
     </nav>
   );
 };
