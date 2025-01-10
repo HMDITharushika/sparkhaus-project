@@ -1,19 +1,26 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Showcase from "./components/Showcase";
 
 export default function App() {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+    <>
+      {/* Background Layers */}
       <div className="fixed top-0 -z-10 h-full w-full">
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_100%_50%,rgba(48,79,204,0.8),rgba(255,255,255,0))]"></div>
-
-        <div className="absolute top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(ellipse_50%_80%_at_100%_40%,rgba(48,79,204,0.8),rgba(255,255,255,0))]">
-          <Navbar />
-          <Hero />
-        </div>
+        <div className="absolute top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(ellipse_50%_80%_at_100%_40%,rgba(48,79,204,0.8),rgba(255,255,255,0))]"></div>
       </div>
-    </div>
+
+      {/* Main Content */}
+      <div className="mx-auto px-4">
+        <Navbar />
+        <Hero />
+        <Showcase />
+        
+
+        
+
+      </div>
+    </>
   );
 }
-
-// 80 80 100 50

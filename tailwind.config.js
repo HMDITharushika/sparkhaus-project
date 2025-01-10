@@ -10,7 +10,7 @@ export default {
         incompleeta: ['incompleeta', 'sans-serif'],
         'bebas-neue': ['Bebas Neue', 'sans-serif'],
       }
-    },
+    }
   },
   plugins: [],
 }
