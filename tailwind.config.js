@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         incompleeta: ['incompleeta', 'sans-serif'],
         'bebas-neue': ['Bebas Neue', 'sans-serif'],
+      },
+      colors: {
+        customGray: 'rgba(141, 137, 137, 1)',
       }
     }
   },

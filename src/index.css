@@ -4,9 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   font-family: "Syne", sans-serif;
+} */
+
+:root {
+  color: #fff;
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow-x: hidden;
+  position: relative;
+  background: radial-gradient(circle 1000px at 100% 10%, #0e2686, transparent 60%),
+              radial-gradient(circle 800px at 0% 40%, #c0c0c0, transparent 60%),
+              radial-gradient(circle 800px at 100% 100%, #c0c0c0, transparent 60%),
+              radial-gradient(circle 1000px at 0% 90%, #0e2686, transparent 60%);
+  background-color: #000;
 }
+
 
 /* body {
   width: 100dvw;
