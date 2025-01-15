@@ -2,7 +2,7 @@ import player from "../assets/images/cricket.webp";
 
 const Showcase = () => {
   return (
-    <section className="text-white flex flex-col items-center justify-center h-screen">
+    <section className="flex flex-col items-center justify-center h-screen">
       <h2 className="font-bebas-neue text-[4rem]">SHOWCASE</h2>
       <p className="text-center">Crafting Digital Success Stories, One Project at a Time</p>
 

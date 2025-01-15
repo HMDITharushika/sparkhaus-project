@@ -2,7 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Services = () => {
   return (
-    <section className="text-white flex flex-col items-center justify-center h-screen">
+    <section className="flex flex-col items-center justify-center h-screen">
       <h2 className="font-bebas-neue text-[4rem] mb-20">SERVICES</h2>
 
       <div className="flex flex-col items-center justify-center w-[80%] space-y-6">

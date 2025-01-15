@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen text-center px-4 sm:px-6 lg:px-8">
-      <h1 className="font-bebas-neue font-normal text-[4rem] sm:text-[6rem] lg:text-[8rem] text-white leading-none">
+      <h1 className="font-bebas-neue font-normal text-[4rem] sm:text-[6rem] lg:text-[8rem] leading-none">
         IGNITE THE STORY
         <br />
         SHAPE THE LEGACY

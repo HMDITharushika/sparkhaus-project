@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="top-0 z-10 w-full text-white font-bebas-neue">
+    <nav className="top-0 z-10 w-full font-bebas-neue">
       <div className="mx-auto flex max-w-screen-xl items-center justify-between mt-8 px-4 py-1 backdrop-blur-lg border border-white/10 rounded-3xl">
         <img src={logo} alt="SparkHaus Logo" className="w-32" />
 

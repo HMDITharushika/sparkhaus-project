@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="text-white flex flex-col items-center justify-center text-center h-screen px-6">
+    <section className="flex flex-col items-center justify-center text-center h-screen px-6">
       <h2 className="font-bebas-neue text-[3rem] sm:text-[4rem] leading-tight mb-6">
         SPEAK WITH US IF YOU&apos;D LIKE TO TELL <br />
         YOUR STORY
