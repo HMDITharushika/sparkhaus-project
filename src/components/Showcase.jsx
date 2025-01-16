@@ -10,7 +10,7 @@ const Showcase = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen">
+    <section className="flex flex-col items-center justify-center">
       <h2 className="font-bebas-neue text-[4rem]">SHOWCASE</h2>
       <p className="text-center">
         Crafting Digital Success Stories, One Project at a Time
@@ -41,7 +41,7 @@ const Showcase = () => {
           onLoad={handleImageLoad}
           className="rounded-xl border border-white/10 w-full max-h-[350px] object-cover bg-black"
         />
-        <h3 className="font-bebas-neue text-[2rem] mt-4">DOCTOR OF BAT</h3>
+        <h3 className="font-bebas-neue text-lg mt-4">DOCTOR OF BAT</h3>
         <p className="text-center font-normal">Cricket bat repair shop</p>
       </div>
     </section>

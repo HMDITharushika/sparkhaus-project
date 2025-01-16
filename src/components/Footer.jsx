@@ -9,12 +9,12 @@ import {
 
 const Footer = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center h-screen">
+    <section className="flex flex-col items-center justify-center text-center mb-10">
       <h2 className="font-bebas-neue text-[3rem] sm:text-[4rem] leading-tight mb-6">
         SPEAK WITH US IF YOU&apos;D LIKE TO TELL <br />
         YOUR STORY
       </h2>
-      <p className="text-lg lg:text-xl text-gray-300 mb-6">
+      <p className="text-lg lg:text-xl text-gray-300">
         Something in mind? Hop on that call!
       </p>
 
