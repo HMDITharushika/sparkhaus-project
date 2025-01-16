@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="top-0 z-10 w-full font-bebas-neue">
+    <nav className="fixed top-0 z-10 w-full font-bebas-neue px-8">
       <div className="mx-auto flex max-w-screen-xl items-center justify-between mt-8 px-4 py-1 backdrop-blur-lg border border-white/10 rounded-3xl">
         <img src={logo} alt="SparkHaus Logo" className="w-32" />
 
@@ -26,27 +26,23 @@ const NavBar = () => {
         >
           Book a Call
         </a>
-      </div>
 
-      {/* Mobile Menu*/}
-      <div className="lg:hidden flex items-center ml-auto">
-        <button onClick={toggleMobileMenu} className="text-xl">
+        <button
+          onClick={toggleMobileMenu}
+          className="lg:hidden text-xl text-white"
+          aria-label="Toggle menu"
+        >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="w-full backdrop-blur-lg lg:hidden bg-black p-4 rounded-lg bg-opacity-50">
           <div className="flex flex-col items-center space-y-4 text-lg">
-            <a href="#services" className="text-white">
-              Services
-            </a>
-            <a href="#about" className="text-white">
-              About
-            </a>
-            <a href="#portfolio" className="text-white">
-              Portfolio
-            </a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
             <a
               href="*"
               className="rounded-full bg-white px-6 py-2 text-black font-medium uppercase tracking-wide shadow-lg transition hover:bg-blue-900 hover:text-white transform hover:border-white border border-transparent duration-500 active:border-white"

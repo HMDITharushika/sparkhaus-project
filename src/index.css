@@ -4,27 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  font-family: "Syne", sans-serif;
-} */
 
 :root {
   margin: 0;
   font-family: "Syne", sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
   overflow-x: hidden;
   position: relative;
   background-color: #000;
 }
 
-
-/* body {
-  width: 100dvw;
-  overflow-x: hidden;
-  background-color: #dfdff0;
-  font-family: "General Sans", sans-serif;
-} */
 
 @layer base {
   @font-face {

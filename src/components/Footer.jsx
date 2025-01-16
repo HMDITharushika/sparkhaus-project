@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center h-screen px-6">
+    <section className="flex flex-col items-center justify-center text-center h-screen">
       <h2 className="font-bebas-neue text-[3rem] sm:text-[4rem] leading-tight mb-6">
         SPEAK WITH US IF YOU&apos;D LIKE TO TELL <br />
         YOUR STORY
@@ -28,21 +28,21 @@ const Footer = () => {
         </div>
       </a>
 
-      <div className="w-full max-w-4xl text-sm">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-lg sm:text-xl lg:text-2xl text-gray-300">
+      <div className="w-full max-w-4xl text-lg">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-gray-300">
           <div className="flex items-center space-x-2">
             <MdEmail className="w-5 h-5" />
             <span>sparkhausdigital@gmail.com</span>
           </div>
 
-          <div className="flex space-x-4 text-2xl">
-            <a href="" className="hover:text-gray-400">
+          <div className="flex space-x-4">
+            <a href="facebook.com" target="_blank">
               <FaFacebook />
             </a>
-            <a href="" className="hover:text-gray-400">
+            <a href="instagram.com" target="_blank">
               <FaInstagram />
             </a>
-            <a href="" className="hover:text-gray-400">
+            <a href="linekdin.com" target="_blank">
               <FaLinkedin />
             </a>
           </div>

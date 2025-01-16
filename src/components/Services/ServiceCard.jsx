@@ -7,7 +7,7 @@ const ServiceCard = ({ link, text }) => {
       
       <Link
         to={link}
-        className="group uppercase flex items-center justify-center border border-white/50 py-4 px-6 rounded-2xl backdrop-blur-lg lg:shadow-lg bg-gradient-to-r from-white/50 to-[#8d8989]/10 hover:bg-white/20 transition"
+        className="group uppercase flex items-center justify-center border border-white/50 py-4 px-6 rounded-2xl backdrop-blur-lg lg:shadow-lg bg-gradient-to-r from-white/10 to-[#8d8989]/10 hover:bg-white/20 transition"
       >
         <span className="flex items-center">
           <span className="block transition-transform duration-500 group-hover:translate-x-[-10vw] whitespace-nowrap text-center group-hover:text-black">

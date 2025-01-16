@@ -17,7 +17,8 @@ const Showcase = () => {
       </p>
 
       {/* Outer div for larger screens only */}
-      <div className="bg-white/10 border border-white/20 backdrop-blur-lg rounded-lg p-6 px-4 py-4 mt-10 shadow-lg overflow-hidden w-[80%] h-[80%] sm:flex hidden">
+      <div className="bg-white/10 border border-white/20 backdrop-blur-lg rounded-lg p-6 px-4 py-4 mt-10 shadow-lg overflow-hidden w-[80%] h-[80%] sm:flex hidden transition-colors hover:bg-gradient-to-r from-white/20 to-[#8d8989]/10 duration-300 ease-out ">
+
         <div className="flex-[2]">
           <img
             src={isLoaded ? player : playerSmallImage}
